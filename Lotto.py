@@ -20,5 +20,15 @@ def ziehen():
     
 befüllen()
 ziehen()
-
 print(lotto)
+
+
+def statisik():
+    dict={}
+    for i in range(1,46): # die einzelnen Werte
+        dict[i]=0
+    for i in range(0,1000):
+        dict[int(random.random()*45+1)]+=1 # ziehung der einzellnen Werte
+    print(dict)
+statisik()
+
