@@ -60,3 +60,28 @@ Rheinwerk Seite durchlesen
 KW41 hü Pokersimulator
 Modulierung, Methode wo man 5 Objekte rausbekommt, array mit 52 stellen und immer über modolo farbe finden und über division farbe finden, 0-12 (13) 26%13(0,1,2,3(Farbe)) 26/13(Zahl)
 ------------------------------------------------------------ neue Stunde
+Kw 42
+Compieler
+Python ist eine interpreter Sprache.
+Java, C# erzeugen Bytecode kein Maschinencode .class Dateien -> lesbare Textpassagen und Hieroglyphen
+
+*Interpretersprachen sind Plattform unabhängig
+*Maschinencode ist schneller -> aber nicht Plattform unabhängig
+
+Interpretersprachen: Verwaltet vieles selber ( Speicher z.b.) wird durch Garbage- Collector verwendet aber nucht zu 100%% effektiv auf diese Hadware
+
+Python Java C# sind in C programmiert
+C ist in Assambler programmiert
+auch auf data sience architect Seite -> 
+-------------------------
+Mutable immutable Daten
+auch data sience architect Seite->
+
+___________________
+In place
+-------------------
+style Guides
+----------------
+Länge der zeichen in Python sind auf 80 zeichen begrenzt pro zeile
+-------------------
+encodierung
