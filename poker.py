@@ -119,7 +119,7 @@ for i in range(0,100000):
         dic["paar"] = dic["paar"]+1
     
 for i in dic:
-    dic[i]=dic[i]/10000*100
+    dic[i]=dic[i]/100000*100
 print(dic)
 
 
