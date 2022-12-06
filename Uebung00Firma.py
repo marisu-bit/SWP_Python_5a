@@ -23,16 +23,25 @@ class Gruppenleiter(Mitarbeiter):
         self.privaterparkplatz=privaterparkplatz
         self.leitervon=leitervon    
     # konstructor
-class Firma(Gruppenleiter,Mitarbeiter):
+class Firma():
+    mitarbeiter=[]
+    gruppenleiter=[]
     nameFirma=""
     FN=0
     Anschrift=""
-    def __init__(self,name,gender,abteilung,salary,privaterparkplatz,leitervon,nameFirma,FN,Anschrift):
-        Mitarbeiter.__init__(self,name,gender,abteilung,salary)
-        Gruppenleiter.__init__(privaterparkplatz,leitervon)
+    def __init__(self,mitarbeiter,gruppenleiter,nameFirma,FN,Anschrift):
+        self.mitarbeiter=mitarbeiter
+        self.gruppenleiter=gruppenleiter
         self.nameFirma=nameFirma
         self.FN=FN
         self.Anschrift=Anschrift
+    
+    def countMitarbeiter(mitarbeiter ):
+        return len(mitarbeiter)
+    def countGruppenleiter():
+        print("Hallo")
+       # print(self.gruppenleiter.length())
+        return (5)
 
 #main
 def main():
@@ -58,8 +67,9 @@ def main():
     gruppenleiterliste = [g1,g2]
     
     f1=Firma(gruppenleiterliste,mitarbeiterliste,"ITserviceHallo",122332,"6020 Innsbruck")
-
-    print(f1.gruppenleiterliste)
+    
+    zahl=f1.countGruppenleiter()
+    print(zahl)
     
 if __name__ == '__main__':
     main()
