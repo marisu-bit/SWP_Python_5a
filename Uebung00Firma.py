@@ -22,10 +22,8 @@ class Gruppenleiter(Mitarbeiter):
         Mitarbeiter.__init__(self,name,gender,abteilung,salary)
         self.privaterparkplatz=privaterparkplatz
         self.leitervon=leitervon    
-    # konstructor
+
 class Firma():
-    mitarbeiter=[]
-    gruppenleiter=[]
     nameFirma=""
     FN=0
     Anschrift=""
@@ -36,12 +34,11 @@ class Firma():
         self.FN=FN
         self.Anschrift=Anschrift
     
-    def countMitarbeiter(mitarbeiter ):
-        return len(mitarbeiter)
-    def countGruppenleiter():
-        print("Hallo")
-       # print(self.gruppenleiter.length())
-        return (5)
+    def countMitarbeiter(self):
+        return (len(self.mitarbeiter))
+
+    def countGruppenleiter(self):       
+        return (len(self.gruppenleiter))
 
 #main
 def main():
@@ -51,7 +48,6 @@ def main():
     p4=Person("Max3","man")
 
     personen=[p1,p2,p3,p4]
-    
     
 
     m1=Mitarbeiter(p1.name, p1.gender,"IT",10000.0)
@@ -66,10 +62,12 @@ def main():
 
     gruppenleiterliste = [g1,g2]
     
-    f1=Firma(gruppenleiterliste,mitarbeiterliste,"ITserviceHallo",122332,"6020 Innsbruck")
+    f1=Firma(mitarbeiterliste,gruppenleiterliste,"ITserviceHallo",122332,"6020 Innsbruck")
     
-    zahl=f1.countGruppenleiter()
+    zahl=f1.countMitarbeiter()
     print(zahl)
+    
+
     
 if __name__ == '__main__':
     main()
