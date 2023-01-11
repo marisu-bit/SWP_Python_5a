@@ -8,8 +8,10 @@ def aufrufen(Countplayerwins,Countcompwins,symbols_player,symbols_comp):
     print("Schere = 0, Stein = 1, Papier = 2, Echse = 3, Spock = 4")
     print("")
   
-       
-    comp = str(random.randint(0,4))
+    comp =symbols_player.index(max(symbols_player))
+    
+    #print(comp)        #computer wahl 
+   # comp = str(random.randint(0,4)) #ohne logik
     player = str(input())
 
     symbols_player[int(player)] += 1
@@ -84,6 +86,7 @@ if __name__ == '__main__':
     print("3. Beenden")
     choice = str(input())
     if choice == "1":
+        print(symbols_player)
         aufrufen(Countplayerwins,Countcompwins,symbols_player,symbols_comp)
     elif choice == "2":
         statistics( Countplayerwins, Countcompwins, symbols_player, symbols_comp)
