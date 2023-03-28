@@ -14,7 +14,6 @@ class Node:
 	def __init__(self, data):
 		## data of the node
 		self.data = data
-
 		## next pointer
 		self.next = None
 
@@ -40,9 +39,6 @@ class LinkedList:
             #neuer knoten
             self.head = new_node
 
-
-
-
     def display(self):
 		## variable for iteration
         temp_node = self.head
@@ -54,10 +50,7 @@ class LinkedList:
 
 			## moving to the next node
             temp_node = temp_node.next
-
-      
-    
-   
+       
     def length(self):
         temp_node=self.head
         cnt=0
@@ -75,7 +68,5 @@ if __name__ == '__main__':
     for num in range(21):
         linked_list.append(random.randint(1, 100))
   
-
-
 	## printing the linked list
     linked_list.display()
