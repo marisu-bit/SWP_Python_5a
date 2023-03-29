@@ -46,10 +46,14 @@ class array_list:
     def clear(self):
         self.list = []
 
+    def length(self):
+       print(len(self.list))
+
 
 
 if __name__ == '__main__':
     list = array_list()
     list.append_randoms_numbers(10,10)
     print(list.display())
+    list.length()
     
